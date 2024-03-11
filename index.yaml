@@ -3,12 +3,12 @@ entries:
   mycharts:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-03-11T10:44:25.344293+05:30"
-    description: A Helm chart for Kubernetes
-    digest: d3eee5cb8fdba882c686cdd5d346a20ef41fc5beb4184158dbde87bdb312362c
+    created: "2024-03-11T11:12:26.216279+05:30"
+    description: Awanstor CSI Driver for Kubernetes
+    digest: 17886ff972a17311a6f8a89f3bd3b3891a358e3c16b2e8bffc29dfbf7f194f10
     name: mycharts
     type: application
     urls:
     - https://ts0709.github.io/helm-charts/mycharts-0.1.0.tgz
     version: 0.1.0
-generated: "2024-03-11T10:44:25.342939+05:30"
+generated: "2024-03-11T11:12:26.213386+05:30"

@@ -1,6 +1,6 @@
 apiVersion: v2
 name: mycharts
-description: A Helm chart for Kubernetes
+description: Awanstor CSI Driver for Kubernetes
 
 # A chart can be either an 'application' or a 'library' chart.
 #
