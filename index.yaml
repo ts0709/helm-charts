@@ -3,22 +3,11 @@ entries:
   awanstor-csi:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2024-03-11T14:38:47.518662+05:30"
+    created: "2024-03-11T14:45:33.339008+05:30"
     description: AWANSTOR csi storage for container
-    digest: 78d873091a885843ff60185c60f58f70a6e8be730fec70e7696356178584e55e
+    digest: a0fb9038c5e9d34aa3d61f9434291c177bb1ec9de3a25f7aa709f8da75e5cc8a
     name: awanstor-csi
     urls:
     - https://ts0709.github.io/helm-charts/awanstor-csi-0.14.5.tgz
     version: 0.14.5
-  mycharts:
-  - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2024-03-11T14:38:47.519661+05:30"
-    description: Awanstor CSI Driver for Kubernetes
-    digest: 17886ff972a17311a6f8a89f3bd3b3891a358e3c16b2e8bffc29dfbf7f194f10
-    name: mycharts
-    type: application
-    urls:
-    - https://ts0709.github.io/helm-charts/mycharts-0.1.0.tgz
-    version: 0.1.0
-generated: "2024-03-11T14:38:47.513545+05:30"
+generated: "2024-03-11T14:45:33.336856+05:30"
