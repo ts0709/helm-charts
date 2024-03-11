@@ -1,32 +1,14 @@
-name: release
-
-on:
-  push:
-    branches:
-      - main
-
-jobs:
-  release:
-    # depending on default permission settings for your org (contents being read-only or read-write for workloads), you will have to add permissions
-    # see: https://docs.github.com/en/actions/security-guides/automatic-token-authentication#modifying-the-permissions-for-the-github_token
-    permissions:
-      contents: write
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-
-      - name: Configure Git
-        run: |
-          git config user.name "$GITHUB_ACTOR"
-          git config user.email "$GITHUB_ACTOR@users.noreply.github.com"
-
-      - name: Install Helm
-        uses: azure/setup-helm@v3
-
-      - name: Run chart-releaser
-        uses: helm/chart-releaser-action@v1.5.0
-        env:
-          CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+apiVersion: v1
+entries:
+  mycharts:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2024-03-11T10:44:25.344293+05:30"
+    description: A Helm chart for Kubernetes
+    digest: d3eee5cb8fdba882c686cdd5d346a20ef41fc5beb4184158dbde87bdb312362c
+    name: mycharts
+    type: application
+    urls:
+    - https://ts0709.github.io/helm-charts/mycharts-0.1.0.tgz
+    version: 0.1.0
+generated: "2024-03-11T10:44:25.342939+05:30"

@@ -1,9 +1,9 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: {{ include "csi-chart.fullname" . }}
+  name: {{ include "mycharts.fullname" . }}
   labels:
-    {{- include "csi-chart.labels" . | nindent 4 }}
+    {{- include "mycharts.labels" . | nindent 4 }}
 spec:
   type: {{ .Values.service.type }}
   ports:
@@ -12,4 +12,4 @@ spec:
       protocol: TCP
       name: http
   selector:
-    {{- include "csi-chart.selectorLabels" . | nindent 4 }}
+    {{- include "mycharts.selectorLabels" . | nindent 4 }}

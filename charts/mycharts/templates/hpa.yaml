@@ -2,14 +2,14 @@
 apiVersion: autoscaling/v2
 kind: HorizontalPodAutoscaler
 metadata:
-  name: {{ include "csi-chart.fullname" . }}
+  name: {{ include "mycharts.fullname" . }}
   labels:
-    {{- include "csi-chart.labels" . | nindent 4 }}
+    {{- include "mycharts.labels" . | nindent 4 }}
 spec:
   scaleTargetRef:
     apiVersion: apps/v1
     kind: Deployment
-    name: {{ include "csi-chart.fullname" . }}
+    name: {{ include "mycharts.fullname" . }}
   minReplicas: {{ .Values.autoscaling.minReplicas }}
   maxReplicas: {{ .Values.autoscaling.maxReplicas }}
   metrics:
